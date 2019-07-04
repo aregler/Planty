@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="311" id="KGk-i7-Jjw" customClass="UserPlantCell" customModule="Planty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="311"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="311"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D3T-04-pyM">
+                        <rect key="frame" x="8" y="8" width="310" height="174.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="D3T-04-pyM" secondAttribute="height" multiplier="16:9" id="Nt6-Xj-C8s"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONm-O0-L4Y">
+                        <rect key="frame" x="28" y="202.5" width="270" height="55.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Giessen: in 2 Tagen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISI-13-ADS">
+                        <rect key="frame" x="28" y="274" width="270" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="D3T-04-pyM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6Oz-sd-8Yv"/>
+                    <constraint firstItem="ONm-O0-L4Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Kfv-1V-93q"/>
+                    <constraint firstItem="ISI-13-ADS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Pfv-Sj-j3U"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ISI-13-ADS" secondAttribute="bottom" constant="8" id="RsG-0M-Vj8"/>
+                    <constraint firstItem="ISI-13-ADS" firstAttribute="top" secondItem="ONm-O0-L4Y" secondAttribute="bottom" constant="16" id="Ssc-cI-XjX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ONm-O0-L4Y" secondAttribute="trailing" constant="8" id="a2m-Tq-Qtk"/>
+                    <constraint firstAttribute="trailing" secondItem="D3T-04-pyM" secondAttribute="trailing" constant="8" id="lZl-gc-Gcy"/>
+                    <constraint firstItem="ONm-O0-L4Y" firstAttribute="top" secondItem="D3T-04-pyM" secondAttribute="bottom" constant="20" id="oLg-Wo-D9U"/>
+                    <constraint firstItem="D3T-04-pyM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="usg-Nd-Md7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ISI-13-ADS" secondAttribute="trailing" constant="8" id="yww-O3-jRY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detailLabel" destination="ISI-13-ADS" id="uSM-2G-8Dz"/>
+                <outlet property="plantImageView" destination="D3T-04-pyM" id="szX-bc-9bu"/>
+                <outlet property="titleLabel" destination="ONm-O0-L4Y" id="wiT-5Y-ViP"/>
+            </connections>
+            <point key="canvasLocation" x="-368.11594202898556" y="102.12053571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

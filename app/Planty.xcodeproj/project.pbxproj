@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D624F7B722CE6B2A00B41FF6 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7B622CE6B2A00B41FF6 /* Mock.swift */; };
+		D624F7BB22CE6F8400B41FF6 /* UserPlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7B922CE6F8400B41FF6 /* UserPlantCell.swift */; };
+		D624F7BC22CE6F8400B41FF6 /* UserPlantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D624F7BA22CE6F8400B41FF6 /* UserPlantCell.xib */; };
+		D624F7C022CE707C00B41FF6 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D624F7BF22CE707C00B41FF6 /* SDWebImage.framework */; };
+		D624F7C122CE707C00B41FF6 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D624F7BF22CE707C00B41FF6 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D624F7C522CE738B00B41FF6 /* UserPlantDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7C422CE738B00B41FF6 /* UserPlantDataController.swift */; };
+		D624F7C822CE73E700B41FF6 /* ControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7C722CE73E700B41FF6 /* ControllerViewModel.swift */; };
+		D624F7CB22CE741600B41FF6 /* PaginationViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7CA22CE741600B41FF6 /* PaginationViewState.swift */; };
+		D624F7CE22CE749800B41FF6 /* UserPlantDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7CD22CE749800B41FF6 /* UserPlantDataSource.swift */; };
+		D624F7D622CE767E00B41FF6 /* UICollectionView+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7D222CE767E00B41FF6 /* UICollectionView+Identifiable.swift */; };
+		D624F7D722CE767E00B41FF6 /* ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7D322CE767E00B41FF6 /* ClassIdentifiable.swift */; };
+		D624F7D822CE767E00B41FF6 /* UITableView+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7D422CE767E00B41FF6 /* UITableView+Identifiable.swift */; };
+		D624F7D922CE767E00B41FF6 /* NibIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7D522CE767E00B41FF6 /* NibIdentifiable.swift */; };
 		D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68C22CE47AF006B4427 /* AppDelegate.swift */; };
 		D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */; };
 		D66BB69122CE47AF006B4427 /* PlantsOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */; };
@@ -17,7 +30,33 @@
 		D66BB6A422CE47EC006B4427 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB6A322CE47EC006B4427 /* Plant.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D624F7C222CE707C00B41FF6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D624F7C122CE707C00B41FF6 /* SDWebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D624F7B622CE6B2A00B41FF6 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		D624F7B922CE6F8400B41FF6 /* UserPlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlantCell.swift; sourceTree = "<group>"; };
+		D624F7BA22CE6F8400B41FF6 /* UserPlantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPlantCell.xib; sourceTree = "<group>"; };
+		D624F7BF22CE707C00B41FF6 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = ../frameworks/Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		D624F7C422CE738B00B41FF6 /* UserPlantDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlantDataController.swift; sourceTree = "<group>"; };
+		D624F7C722CE73E700B41FF6 /* ControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerViewModel.swift; sourceTree = "<group>"; };
+		D624F7CA22CE741600B41FF6 /* PaginationViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationViewState.swift; sourceTree = "<group>"; };
+		D624F7CD22CE749800B41FF6 /* UserPlantDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlantDataSource.swift; sourceTree = "<group>"; };
+		D624F7D222CE767E00B41FF6 /* UICollectionView+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Identifiable.swift"; sourceTree = "<group>"; };
+		D624F7D322CE767E00B41FF6 /* ClassIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassIdentifiable.swift; sourceTree = "<group>"; };
+		D624F7D422CE767E00B41FF6 /* UITableView+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Identifiable.swift"; sourceTree = "<group>"; };
+		D624F7D522CE767E00B41FF6 /* NibIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibIdentifiable.swift; sourceTree = "<group>"; };
 		D66BB68922CE47AF006B4427 /* Planty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66BB68C22CE47AF006B4427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +74,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D624F7C022CE707C00B41FF6 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D624F7B522CE6B1F00B41FF6 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7B622CE6B2A00B41FF6 /* Mock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		D624F7B822CE6F5700B41FF6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7B922CE6F8400B41FF6 /* UserPlantCell.swift */,
+				D624F7BA22CE6F8400B41FF6 /* UserPlantCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D624F7BE22CE707C00B41FF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7BF22CE707C00B41FF6 /* SDWebImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D624F7C322CE737C00B41FF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7C422CE738B00B41FF6 /* UserPlantDataController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D624F7C622CE73DC00B41FF6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7C722CE73E700B41FF6 /* ControllerViewModel.swift */,
+				D624F7CA22CE741600B41FF6 /* PaginationViewState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D624F7CC22CE748900B41FF6 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7CD22CE749800B41FF6 /* UserPlantDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		D624F7D122CE766800B41FF6 /* Identifiable */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7D322CE767E00B41FF6 /* ClassIdentifiable.swift */,
+				D624F7D522CE767E00B41FF6 /* NibIdentifiable.swift */,
+				D624F7D222CE767E00B41FF6 /* UICollectionView+Identifiable.swift */,
+				D624F7D422CE767E00B41FF6 /* UITableView+Identifiable.swift */,
+			);
+			path = Identifiable;
+			sourceTree = "<group>";
+		};
 		D66BB68022CE47AF006B4427 = {
 			isa = PBXGroup;
 			children = (
 				D66BB68B22CE47AF006B4427 /* Planty */,
 				D66BB68A22CE47AF006B4427 /* Products */,
+				D624F7BE22CE707C00B41FF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +162,12 @@
 		D66BB68B22CE47AF006B4427 /* Planty */ = {
 			isa = PBXGroup;
 			children = (
+				D624F7D122CE766800B41FF6 /* Identifiable */,
+				D624F7CC22CE748900B41FF6 /* DataSource */,
+				D624F7C622CE73DC00B41FF6 /* ViewModel */,
+				D624F7C322CE737C00B41FF6 /* Controllers */,
+				D624F7B822CE6F5700B41FF6 /* Cells */,
+				D624F7B522CE6B1F00B41FF6 /* Mock */,
 				D66BB6A522CE484E006B4427 /* ViewControllers */,
 				D66BB6A222CE47D2006B4427 /* Model */,
 				D66BB68C22CE47AF006B4427 /* AppDelegate.swift */,
@@ -99,6 +207,8 @@
 				D66BB68522CE47AF006B4427 /* Sources */,
 				D66BB68622CE47AF006B4427 /* Frameworks */,
 				D66BB68722CE47AF006B4427 /* Resources */,
+				D624F7BD22CE6FB400B41FF6 /* Carthage */,
+				D624F7C222CE707C00B41FF6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D624F7BC22CE6F8400B41FF6 /* UserPlantCell.xib in Resources */,
 				D66BB69B22CE47AF006B4427 /* LaunchScreen.storyboard in Resources */,
 				D66BB69822CE47AF006B4427 /* Assets.xcassets in Resources */,
 				D66BB69622CE47AF006B4427 /* Main.storyboard in Resources */,
@@ -155,16 +266,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D624F7BD22CE6FB400B41FF6 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../frameworks/Carthage/Build/iOS/SDWebImage.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D66BB68522CE47AF006B4427 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D624F7CB22CE741600B41FF6 /* PaginationViewState.swift in Sources */,
 				D66BB69322CE47AF006B4427 /* SecondViewController.swift in Sources */,
 				D66BB69122CE47AF006B4427 /* PlantsOverviewVC.swift in Sources */,
+				D624F7D822CE767E00B41FF6 /* UITableView+Identifiable.swift in Sources */,
 				D66BB6A422CE47EC006B4427 /* Plant.swift in Sources */,
 				D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */,
+				D624F7C522CE738B00B41FF6 /* UserPlantDataController.swift in Sources */,
+				D624F7C822CE73E700B41FF6 /* ControllerViewModel.swift in Sources */,
 				D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */,
+				D624F7BB22CE6F8400B41FF6 /* UserPlantCell.swift in Sources */,
+				D624F7B722CE6B2A00B41FF6 /* Mock.swift in Sources */,
+				D624F7D622CE767E00B41FF6 /* UICollectionView+Identifiable.swift in Sources */,
+				D624F7D922CE767E00B41FF6 /* NibIdentifiable.swift in Sources */,
+				D624F7CE22CE749800B41FF6 /* UserPlantDataSource.swift in Sources */,
+				D624F7D722CE767E00B41FF6 /* ClassIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../frameworks/Carthage/Build/iOS\"";
 				INFOPLIST_FILE = Planty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../frameworks/Carthage/Build/iOS\"";
 				INFOPLIST_FILE = Planty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
