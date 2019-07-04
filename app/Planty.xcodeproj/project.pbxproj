@@ -3,130 +3,128 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6D094F022CE457700643383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D094EF22CE457700643383 /* AppDelegate.swift */; };
-		D6D094F222CE457700643383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D094F122CE457700643383 /* SceneDelegate.swift */; };
-		D6D094F422CE457700643383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D094F322CE457700643383 /* ContentView.swift */; };
-		D6D094F622CE457700643383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D094F522CE457700643383 /* Assets.xcassets */; };
-		D6D094F922CE457700643383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D094F822CE457700643383 /* Preview Assets.xcassets */; };
-		D6D094FC22CE457700643383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D094FA22CE457700643383 /* LaunchScreen.storyboard */; };
-		D6D0950522CE45B500643383 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D0950422CE45B500643383 /* Plant.swift */; };
-		D6D0950822CE464900643383 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D6D0950722CE464900643383 /* SDWebImage */; };
+		D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68C22CE47AF006B4427 /* AppDelegate.swift */; };
+		D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */; };
+		D66BB69122CE47AF006B4427 /* PlantsOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */; };
+		D66BB69322CE47AF006B4427 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB69222CE47AF006B4427 /* SecondViewController.swift */; };
+		D66BB69622CE47AF006B4427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66BB69422CE47AF006B4427 /* Main.storyboard */; };
+		D66BB69822CE47AF006B4427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66BB69722CE47AF006B4427 /* Assets.xcassets */; };
+		D66BB69B22CE47AF006B4427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66BB69922CE47AF006B4427 /* LaunchScreen.storyboard */; };
+		D66BB6A422CE47EC006B4427 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB6A322CE47EC006B4427 /* Plant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D6D094EC22CE457700643383 /* Planty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planty.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6D094EF22CE457700643383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6D094F122CE457700643383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6D094F322CE457700643383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D6D094F522CE457700643383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D6D094F822CE457700643383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D6D094FB22CE457700643383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D6D094FD22CE457700643383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6D0950422CE45B500643383 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		D66BB68922CE47AF006B4427 /* Planty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66BB68C22CE47AF006B4427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsOverviewVC.swift; sourceTree = "<group>"; };
+		D66BB69222CE47AF006B4427 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D66BB69522CE47AF006B4427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D66BB69722CE47AF006B4427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D66BB69A22CE47AF006B4427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D66BB69C22CE47AF006B4427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66BB6A322CE47EC006B4427 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D6D094E922CE457700643383 /* Frameworks */ = {
+		D66BB68622CE47AF006B4427 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D0950822CE464900643383 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D6D094E322CE457700643383 = {
+		D66BB68022CE47AF006B4427 = {
 			isa = PBXGroup;
 			children = (
-				D6D094EE22CE457700643383 /* Planty */,
-				D6D094ED22CE457700643383 /* Products */,
+				D66BB68B22CE47AF006B4427 /* Planty */,
+				D66BB68A22CE47AF006B4427 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D6D094ED22CE457700643383 /* Products */ = {
+		D66BB68A22CE47AF006B4427 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D6D094EC22CE457700643383 /* Planty.app */,
+				D66BB68922CE47AF006B4427 /* Planty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6D094EE22CE457700643383 /* Planty */ = {
+		D66BB68B22CE47AF006B4427 /* Planty */ = {
 			isa = PBXGroup;
 			children = (
-				D6D0950322CE45AC00643383 /* Model */,
-				D6D094EF22CE457700643383 /* AppDelegate.swift */,
-				D6D094F122CE457700643383 /* SceneDelegate.swift */,
-				D6D094F322CE457700643383 /* ContentView.swift */,
-				D6D094F522CE457700643383 /* Assets.xcassets */,
-				D6D094FA22CE457700643383 /* LaunchScreen.storyboard */,
-				D6D094FD22CE457700643383 /* Info.plist */,
-				D6D094F722CE457700643383 /* Preview Content */,
+				D66BB6A522CE484E006B4427 /* ViewControllers */,
+				D66BB6A222CE47D2006B4427 /* Model */,
+				D66BB68C22CE47AF006B4427 /* AppDelegate.swift */,
+				D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */,
+				D66BB69422CE47AF006B4427 /* Main.storyboard */,
+				D66BB69722CE47AF006B4427 /* Assets.xcassets */,
+				D66BB69922CE47AF006B4427 /* LaunchScreen.storyboard */,
+				D66BB69C22CE47AF006B4427 /* Info.plist */,
 			);
 			path = Planty;
 			sourceTree = "<group>";
 		};
-		D6D094F722CE457700643383 /* Preview Content */ = {
+		D66BB6A222CE47D2006B4427 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D6D094F822CE457700643383 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D6D0950322CE45AC00643383 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D6D0950422CE45B500643383 /* Plant.swift */,
+				D66BB6A322CE47EC006B4427 /* Plant.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D66BB6A522CE484E006B4427 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */,
+				D66BB69222CE47AF006B4427 /* SecondViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D6D094EB22CE457700643383 /* Planty */ = {
+		D66BB68822CE47AF006B4427 /* Planty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6D0950022CE457700643383 /* Build configuration list for PBXNativeTarget "Planty" */;
+			buildConfigurationList = D66BB69F22CE47AF006B4427 /* Build configuration list for PBXNativeTarget "Planty" */;
 			buildPhases = (
-				D6D094E822CE457700643383 /* Sources */,
-				D6D094E922CE457700643383 /* Frameworks */,
-				D6D094EA22CE457700643383 /* Resources */,
+				D66BB68522CE47AF006B4427 /* Sources */,
+				D66BB68622CE47AF006B4427 /* Frameworks */,
+				D66BB68722CE47AF006B4427 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Planty;
-			packageProductDependencies = (
-				D6D0950722CE464900643383 /* SDWebImage */,
-			);
 			productName = Planty;
-			productReference = D6D094EC22CE457700643383 /* Planty.app */;
+			productReference = D66BB68922CE47AF006B4427 /* Planty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D6D094E422CE457700643383 /* Project object */ = {
+		D66BB68122CE47AF006B4427 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Arsatius Regler";
 				TargetAttributes = {
-					D6D094EB22CE457700643383 = {
+					D66BB68822CE47AF006B4427 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = D6D094E722CE457700643383 /* Build configuration list for PBXProject "Planty" */;
+			buildConfigurationList = D66BB68422CE47AF006B4427 /* Build configuration list for PBXProject "Planty" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,51 +132,57 @@
 				en,
 				Base,
 			);
-			mainGroup = D6D094E322CE457700643383;
-			packageReferences = (
-				D6D0950622CE464900643383 /* XCRemoteSwiftPackageReference "SDWebImage" */,
-			);
-			productRefGroup = D6D094ED22CE457700643383 /* Products */;
+			mainGroup = D66BB68022CE47AF006B4427;
+			productRefGroup = D66BB68A22CE47AF006B4427 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6D094EB22CE457700643383 /* Planty */,
+				D66BB68822CE47AF006B4427 /* Planty */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D6D094EA22CE457700643383 /* Resources */ = {
+		D66BB68722CE47AF006B4427 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D094FC22CE457700643383 /* LaunchScreen.storyboard in Resources */,
-				D6D094F922CE457700643383 /* Preview Assets.xcassets in Resources */,
-				D6D094F622CE457700643383 /* Assets.xcassets in Resources */,
+				D66BB69B22CE47AF006B4427 /* LaunchScreen.storyboard in Resources */,
+				D66BB69822CE47AF006B4427 /* Assets.xcassets in Resources */,
+				D66BB69622CE47AF006B4427 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D6D094E822CE457700643383 /* Sources */ = {
+		D66BB68522CE47AF006B4427 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D094F022CE457700643383 /* AppDelegate.swift in Sources */,
-				D6D0950522CE45B500643383 /* Plant.swift in Sources */,
-				D6D094F222CE457700643383 /* SceneDelegate.swift in Sources */,
-				D6D094F422CE457700643383 /* ContentView.swift in Sources */,
+				D66BB69322CE47AF006B4427 /* SecondViewController.swift in Sources */,
+				D66BB69122CE47AF006B4427 /* PlantsOverviewVC.swift in Sources */,
+				D66BB6A422CE47EC006B4427 /* Plant.swift in Sources */,
+				D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */,
+				D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D6D094FA22CE457700643383 /* LaunchScreen.storyboard */ = {
+		D66BB69422CE47AF006B4427 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D6D094FB22CE457700643383 /* Base */,
+				D66BB69522CE47AF006B4427 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D66BB69922CE47AF006B4427 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D66BB69A22CE47AF006B4427 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -186,7 +190,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D6D094FE22CE457700643383 /* Debug */ = {
+		D66BB69D22CE47AF006B4427 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +250,7 @@
 			};
 			name = Debug;
 		};
-		D6D094FF22CE457700643383 /* Release */ = {
+		D66BB69E22CE47AF006B4427 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -300,13 +304,11 @@
 			};
 			name = Release;
 		};
-		D6D0950122CE457700643383 /* Debug */ = {
+		D66BB6A022CE47AF006B4427 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Planty/Preview\\ Content";
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Planty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,13 +321,11 @@
 			};
 			name = Debug;
 		};
-		D6D0950222CE457700643383 /* Release */ = {
+		D66BB6A122CE47AF006B4427 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Planty/Preview\\ Content";
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Planty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,44 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6D094E722CE457700643383 /* Build configuration list for PBXProject "Planty" */ = {
+		D66BB68422CE47AF006B4427 /* Build configuration list for PBXProject "Planty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6D094FE22CE457700643383 /* Debug */,
-				D6D094FF22CE457700643383 /* Release */,
+				D66BB69D22CE47AF006B4427 /* Debug */,
+				D66BB69E22CE47AF006B4427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6D0950022CE457700643383 /* Build configuration list for PBXNativeTarget "Planty" */ = {
+		D66BB69F22CE47AF006B4427 /* Build configuration list for PBXNativeTarget "Planty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6D0950122CE457700643383 /* Debug */,
-				D6D0950222CE457700643383 /* Release */,
+				D66BB6A022CE47AF006B4427 /* Debug */,
+				D66BB6A122CE47AF006B4427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D6D0950622CE464900643383 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D6D0950722CE464900643383 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D6D0950622CE464900643383 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = D6D094E422CE457700643383 /* Project object */;
+	rootObject = D66BB68122CE47AF006B4427 /* Project object */;
 }

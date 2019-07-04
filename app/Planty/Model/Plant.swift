@@ -8,10 +8,7 @@
 
 import Foundation
 
-enum PlantKind {}
-
 struct Plant {
 	let name: String
-	let kind: PlantKind
 	let image: URL
 }
