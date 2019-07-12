@@ -14,10 +14,9 @@ class UserPlantCell: UITableViewCell, NibIdentifiable {
 	@IBOutlet weak var plantImageView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var detailLabel: UILabel!
-
+	
 	override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
 		titleLabel.textColor = .label
 		detailLabel.textColor = .secondaryLabel
     }
@@ -26,12 +25,9 @@ class UserPlantCell: UITableViewCell, NibIdentifiable {
 		plantImageView.sd_setImage(with: plant.image, completed: nil)
 		titleLabel.text = plant.name
 		detailLabel.text = "Giessen: in 2 Tagen"
+
+		plantImageView.contentMode = .scaleAspectFill
+		plantImageView.layer.masksToBounds = true
+		plantImageView.layer.cornerRadius = 10
 	}
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

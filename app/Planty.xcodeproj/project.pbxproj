@@ -20,6 +20,18 @@
 		D624F7D722CE767E00B41FF6 /* ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7D322CE767E00B41FF6 /* ClassIdentifiable.swift */; };
 		D624F7D822CE767E00B41FF6 /* UITableView+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7D422CE767E00B41FF6 /* UITableView+Identifiable.swift */; };
 		D624F7D922CE767E00B41FF6 /* NibIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7D522CE767E00B41FF6 /* NibIdentifiable.swift */; };
+		D624F7E022CE918500B41FF6 /* Extension+NSLayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7DF22CE918500B41FF6 /* Extension+NSLayoutConstraints.swift */; };
+		D624F7E322CF5E5C00B41FF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7E222CF5E5C00B41FF6 /* Constants.swift */; };
+		D624F7E522CF5EFB00B41FF6 /* CommunityPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7E422CF5EFB00B41FF6 /* CommunityPlant.swift */; };
+		D624F7E822CF5FF800B41FF6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7E722CF5FF800B41FF6 /* NetworkService.swift */; };
+		D624F7EA22CF60CC00B41FF6 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7E922CF60CC00B41FF6 /* CommunityViewController.swift */; };
+		D624F7ED22CF615F00B41FF6 /* CommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7EB22CF615F00B41FF6 /* CommunityTableViewCell.swift */; };
+		D624F7EE22CF615F00B41FF6 /* CommunityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D624F7EC22CF615F00B41FF6 /* CommunityTableViewCell.xib */; };
+		D624F7F022CF62EE00B41FF6 /* CommunityDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7EF22CF62EE00B41FF6 /* CommunityDataController.swift */; };
+		D624F7F222CF638400B41FF6 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7F122CF638400B41FF6 /* Resource.swift */; };
+		D624F7F422CF64F700B41FF6 /* CommunityDataDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7F322CF64F700B41FF6 /* CommunityDataDataSource.swift */; };
+		D624F7F822CF660400B41FF6 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7F722CF660400B41FF6 /* LoadingViewController.swift */; };
+		D624F7FA22CF665500B41FF6 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7F922CF665500B41FF6 /* Extension+UIViewController.swift */; };
 		D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68C22CE47AF006B4427 /* AppDelegate.swift */; };
 		D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */; };
 		D66BB69122CE47AF006B4427 /* PlantsOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */; };
@@ -57,6 +69,18 @@
 		D624F7D322CE767E00B41FF6 /* ClassIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassIdentifiable.swift; sourceTree = "<group>"; };
 		D624F7D422CE767E00B41FF6 /* UITableView+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Identifiable.swift"; sourceTree = "<group>"; };
 		D624F7D522CE767E00B41FF6 /* NibIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibIdentifiable.swift; sourceTree = "<group>"; };
+		D624F7DF22CE918500B41FF6 /* Extension+NSLayoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSLayoutConstraints.swift"; sourceTree = "<group>"; };
+		D624F7E222CF5E5C00B41FF6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D624F7E422CF5EFB00B41FF6 /* CommunityPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityPlant.swift; sourceTree = "<group>"; };
+		D624F7E722CF5FF800B41FF6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D624F7E922CF60CC00B41FF6 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		D624F7EB22CF615F00B41FF6 /* CommunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTableViewCell.swift; sourceTree = "<group>"; };
+		D624F7EC22CF615F00B41FF6 /* CommunityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityTableViewCell.xib; sourceTree = "<group>"; };
+		D624F7EF22CF62EE00B41FF6 /* CommunityDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDataController.swift; sourceTree = "<group>"; };
+		D624F7F122CF638400B41FF6 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		D624F7F322CF64F700B41FF6 /* CommunityDataDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDataDataSource.swift; sourceTree = "<group>"; };
+		D624F7F722CF660400B41FF6 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		D624F7F922CF665500B41FF6 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		D66BB68922CE47AF006B4427 /* Planty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66BB68C22CE47AF006B4427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +118,8 @@
 			children = (
 				D624F7B922CE6F8400B41FF6 /* UserPlantCell.swift */,
 				D624F7BA22CE6F8400B41FF6 /* UserPlantCell.xib */,
+				D624F7EB22CF615F00B41FF6 /* CommunityTableViewCell.swift */,
+				D624F7EC22CF615F00B41FF6 /* CommunityTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -110,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				D624F7C422CE738B00B41FF6 /* UserPlantDataController.swift */,
+				D624F7EF22CF62EE00B41FF6 /* CommunityDataController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				D624F7CD22CE749800B41FF6 /* UserPlantDataSource.swift */,
+				D624F7F322CF64F700B41FF6 /* CommunityDataDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -140,6 +168,31 @@
 				D624F7D422CE767E00B41FF6 /* UITableView+Identifiable.swift */,
 			);
 			path = Identifiable;
+			sourceTree = "<group>";
+		};
+		D624F7DE22CE917200B41FF6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7DF22CE918500B41FF6 /* Extension+NSLayoutConstraints.swift */,
+				D624F7F922CF665500B41FF6 /* Extension+UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D624F7E122CF5E5300B41FF6 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7E222CF5E5C00B41FF6 /* Constants.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		D624F7E622CF5FF100B41FF6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D624F7E722CF5FF800B41FF6 /* NetworkService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		D66BB68022CE47AF006B4427 = {
@@ -162,6 +215,9 @@
 		D66BB68B22CE47AF006B4427 /* Planty */ = {
 			isa = PBXGroup;
 			children = (
+				D624F7E622CF5FF100B41FF6 /* Network */,
+				D624F7E122CF5E5300B41FF6 /* General */,
+				D624F7DE22CE917200B41FF6 /* Extension */,
 				D624F7D122CE766800B41FF6 /* Identifiable */,
 				D624F7CC22CE748900B41FF6 /* DataSource */,
 				D624F7C622CE73DC00B41FF6 /* ViewModel */,
@@ -184,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				D66BB6A322CE47EC006B4427 /* Plant.swift */,
+				D624F7E422CF5EFB00B41FF6 /* CommunityPlant.swift */,
+				D624F7F122CF638400B41FF6 /* Resource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +251,8 @@
 			children = (
 				D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */,
 				D66BB69222CE47AF006B4427 /* SecondViewController.swift */,
+				D624F7E922CF60CC00B41FF6 /* CommunityViewController.swift */,
+				D624F7F722CF660400B41FF6 /* LoadingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -261,6 +321,7 @@
 				D66BB69B22CE47AF006B4427 /* LaunchScreen.storyboard in Resources */,
 				D66BB69822CE47AF006B4427 /* Assets.xcassets in Resources */,
 				D66BB69622CE47AF006B4427 /* Main.storyboard in Resources */,
+				D624F7EE22CF615F00B41FF6 /* CommunityTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,17 +355,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D624F7CB22CE741600B41FF6 /* PaginationViewState.swift in Sources */,
+				D624F7E322CF5E5C00B41FF6 /* Constants.swift in Sources */,
 				D66BB69322CE47AF006B4427 /* SecondViewController.swift in Sources */,
+				D624F7ED22CF615F00B41FF6 /* CommunityTableViewCell.swift in Sources */,
 				D66BB69122CE47AF006B4427 /* PlantsOverviewVC.swift in Sources */,
 				D624F7D822CE767E00B41FF6 /* UITableView+Identifiable.swift in Sources */,
 				D66BB6A422CE47EC006B4427 /* Plant.swift in Sources */,
+				D624F7F822CF660400B41FF6 /* LoadingViewController.swift in Sources */,
+				D624F7FA22CF665500B41FF6 /* Extension+UIViewController.swift in Sources */,
+				D624F7E022CE918500B41FF6 /* Extension+NSLayoutConstraints.swift in Sources */,
+				D624F7F222CF638400B41FF6 /* Resource.swift in Sources */,
 				D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */,
+				D624F7F422CF64F700B41FF6 /* CommunityDataDataSource.swift in Sources */,
+				D624F7F022CF62EE00B41FF6 /* CommunityDataController.swift in Sources */,
+				D624F7EA22CF60CC00B41FF6 /* CommunityViewController.swift in Sources */,
 				D624F7C522CE738B00B41FF6 /* UserPlantDataController.swift in Sources */,
+				D624F7E522CF5EFB00B41FF6 /* CommunityPlant.swift in Sources */,
 				D624F7C822CE73E700B41FF6 /* ControllerViewModel.swift in Sources */,
 				D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */,
 				D624F7BB22CE6F8400B41FF6 /* UserPlantCell.swift in Sources */,
 				D624F7B722CE6B2A00B41FF6 /* Mock.swift in Sources */,
 				D624F7D622CE767E00B41FF6 /* UICollectionView+Identifiable.swift in Sources */,
+				D624F7E822CF5FF800B41FF6 /* NetworkService.swift in Sources */,
 				D624F7D922CE767E00B41FF6 /* NibIdentifiable.swift in Sources */,
 				D624F7CE22CE749800B41FF6 /* UserPlantDataSource.swift in Sources */,
 				D624F7D722CE767E00B41FF6 /* ClassIdentifiable.swift in Sources */,
@@ -452,6 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V52NKR4UCE;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../frameworks/Carthage/Build/iOS\"";
 				INFOPLIST_FILE = Planty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,6 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V52NKR4UCE;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../frameworks/Carthage/Build/iOS\"";
 				INFOPLIST_FILE = Planty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

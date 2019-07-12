@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D3T-04-pyM">
-                        <rect key="frame" x="8" y="8" width="310" height="174.5"/>
+                        <rect key="frame" x="16" y="16" width="294" height="165.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="D3T-04-pyM" secondAttribute="height" multiplier="16:9" id="Nt6-Xj-C8s"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONm-O0-L4Y">
-                        <rect key="frame" x="28" y="202.5" width="270" height="55.5"/>
+                        <rect key="frame" x="28" y="201.5" width="270" height="56.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -36,15 +36,15 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="D3T-04-pyM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6Oz-sd-8Yv"/>
+                    <constraint firstItem="D3T-04-pyM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="6Oz-sd-8Yv"/>
                     <constraint firstItem="ONm-O0-L4Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Kfv-1V-93q"/>
                     <constraint firstItem="ISI-13-ADS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Pfv-Sj-j3U"/>
                     <constraint firstAttribute="bottomMargin" secondItem="ISI-13-ADS" secondAttribute="bottom" constant="8" id="RsG-0M-Vj8"/>
                     <constraint firstItem="ISI-13-ADS" firstAttribute="top" secondItem="ONm-O0-L4Y" secondAttribute="bottom" constant="16" id="Ssc-cI-XjX"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ONm-O0-L4Y" secondAttribute="trailing" constant="8" id="a2m-Tq-Qtk"/>
-                    <constraint firstAttribute="trailing" secondItem="D3T-04-pyM" secondAttribute="trailing" constant="8" id="lZl-gc-Gcy"/>
+                    <constraint firstAttribute="trailing" secondItem="D3T-04-pyM" secondAttribute="trailing" constant="16" id="lZl-gc-Gcy"/>
                     <constraint firstItem="ONm-O0-L4Y" firstAttribute="top" secondItem="D3T-04-pyM" secondAttribute="bottom" constant="20" id="oLg-Wo-D9U"/>
-                    <constraint firstItem="D3T-04-pyM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="usg-Nd-Md7"/>
+                    <constraint firstItem="D3T-04-pyM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="usg-Nd-Md7"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ISI-13-ADS" secondAttribute="trailing" constant="8" id="yww-O3-jRY"/>
                 </constraints>
             </tableViewCellContentView>
@@ -54,7 +54,7 @@
                 <outlet property="plantImageView" destination="D3T-04-pyM" id="szX-bc-9bu"/>
                 <outlet property="titleLabel" destination="ONm-O0-L4Y" id="wiT-5Y-ViP"/>
             </connections>
-            <point key="canvasLocation" x="-368.11594202898556" y="102.12053571428571"/>
+            <point key="canvasLocation" x="-64" y="75"/>
         </tableViewCell>
     </objects>
 </document>

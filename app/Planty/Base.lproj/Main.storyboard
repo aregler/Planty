@@ -30,7 +30,7 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" id="8gg-70-X3g">
-                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" style="plain" id="Pum-cs-WSi">
+                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="Pum-cs-WSi">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -88,6 +88,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="GlG-27-Nmq" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="ZSd-YG-1Ar" kind="relationship" relationship="viewControllers" id="VrI-yo-tXh"/>
                         <segue destination="5Gg-h3-7Uy" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="eea-wD-AHb" kind="relationship" relationship="viewControllers" id="OW8-SU-XMh"/>
                     </connections>
@@ -151,6 +152,38 @@
             </objects>
             <point key="canvasLocation" x="-313.04347826086956" y="566.51785714285711"/>
         </scene>
+        <!--Community-->
+        <scene sceneID="ZvX-bS-V2A">
+            <objects>
+                <viewController id="ZSd-YG-1Ar" customClass="CommunityViewController" customModule="Planty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YkF-NI-8mb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="LtJ-J8-6Jl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LtJ-J8-6Jl" firstAttribute="leading" secondItem="rPd-74-SMl" secondAttribute="leading" id="cCj-bC-cF1"/>
+                            <constraint firstItem="LtJ-J8-6Jl" firstAttribute="top" secondItem="rPd-74-SMl" secondAttribute="top" id="etH-4M-ONT"/>
+                            <constraint firstItem="rPd-74-SMl" firstAttribute="bottom" secondItem="LtJ-J8-6Jl" secondAttribute="bottom" id="kIE-Gt-UUt"/>
+                            <constraint firstItem="rPd-74-SMl" firstAttribute="trailing" secondItem="LtJ-J8-6Jl" secondAttribute="trailing" id="lx1-IL-fwD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rPd-74-SMl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Community" image="person.circle" catalog="system" id="PRb-13-bWU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="LtJ-J8-6Jl" id="54q-VM-yOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjn-2F-lst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3100" y="567"/>
+        </scene>
         <!--Einstellungen-->
         <scene sceneID="z8B-e0-RMr">
             <objects>
@@ -174,6 +207,7 @@
     <resources>
         <image name="gear" catalog="system" width="64" height="60"/>
         <image name="magnifyingglass" catalog="system" width="64" height="60"/>
+        <image name="person.circle" catalog="system" width="64" height="62"/>
         <image name="star.circle" catalog="system" width="64" height="62"/>
         <image name="tag" catalog="system" width="64" height="58"/>
     </resources>
