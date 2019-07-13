@@ -54,4 +54,8 @@ class CommunityViewController: UIViewController {
 	}
 }
 
-extension CommunityViewController: UITableViewDelegate {}
+extension CommunityViewController: UITableViewDelegate {
+//	func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//		addCornerRadius(to: cell, size: CGSize(width: 10, height: 10))
+//	}
+}

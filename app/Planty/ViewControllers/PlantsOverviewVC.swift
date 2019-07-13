@@ -11,6 +11,7 @@ import UIKit
 final class PlantsOverviewVC: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
 
+	@IBOutlet weak var addNewPlantButton: UIBarButtonItem!
 	// normally injected
 	private let controller = UserPlantDataController()
 

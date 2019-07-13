@@ -22,6 +22,7 @@ final class CommunityDataDataSource: NSObject, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell: CommunityTableViewCell = tableView.dequeueResuableCell(forIndexPath: indexPath)
 		cell.configure(with: data[indexPath.row])
+		cell.onImageLoaded = { tableView.reloadRows(at: [indexPath], with: .none) }
 		return cell
 	}
 

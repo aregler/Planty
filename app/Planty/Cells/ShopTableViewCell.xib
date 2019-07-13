@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="345" id="KGk-i7-Jjw" customClass="ShopTableViewCell" customModule="Planty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="345"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="345"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HV-tk-HDo">
+                        <rect key="frame" x="16" y="316" width="300" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BIS-ca-hwK">
+                        <rect key="frame" x="0.0" y="-5" width="316" height="321"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="321" id="8SB-Nq-H8b"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BIS-ca-hwK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-16" id="4Zf-PE-yfQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BIS-ca-hwK" secondAttribute="trailing" constant="-16" id="Oeh-uB-TA7"/>
+                    <constraint firstItem="8HV-tk-HDo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dQ0-F1-tXE"/>
+                    <constraint firstAttribute="bottom" secondItem="8HV-tk-HDo" secondAttribute="bottom" id="gYv-XC-cHY"/>
+                    <constraint firstAttribute="trailing" secondItem="8HV-tk-HDo" secondAttribute="trailing" id="gcl-ym-5N4"/>
+                    <constraint firstItem="BIS-ca-hwK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-16" id="i7H-S6-Q71"/>
+                    <constraint firstItem="8HV-tk-HDo" firstAttribute="top" secondItem="BIS-ca-hwK" secondAttribute="bottom" id="xHk-5t-A2r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="productImageView" destination="BIS-ca-hwK" id="vbg-Jz-zpT"/>
+                <outlet property="typeLabel" destination="8HV-tk-HDo" id="9Ej-XO-P3c"/>
+            </connections>
+            <point key="canvasLocation" x="-126.08695652173914" y="-29.799107142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

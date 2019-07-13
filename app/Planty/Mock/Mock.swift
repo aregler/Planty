@@ -26,4 +26,9 @@ struct Mock {
 						  description: description)
 		return plant
 	}
+
+	struct Shop {
+		static let sensor = Sensor(type: "SOSMART", measures: [.fertility, .water, .light, .temperature], price: 15.00)
+		static let smartPot = SmartPot(type: "POT", measures: [.fertility, .water, .temperature], price: 60.00)
+	}
 }

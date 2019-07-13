@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,11 +35,21 @@
 		D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68C22CE47AF006B4427 /* AppDelegate.swift */; };
 		D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */; };
 		D66BB69122CE47AF006B4427 /* PlantsOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */; };
-		D66BB69322CE47AF006B4427 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB69222CE47AF006B4427 /* SecondViewController.swift */; };
+		D66BB69322CE47AF006B4427 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB69222CE47AF006B4427 /* ShopViewController.swift */; };
 		D66BB69622CE47AF006B4427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66BB69422CE47AF006B4427 /* Main.storyboard */; };
 		D66BB69822CE47AF006B4427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66BB69722CE47AF006B4427 /* Assets.xcassets */; };
 		D66BB69B22CE47AF006B4427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66BB69922CE47AF006B4427 /* LaunchScreen.storyboard */; };
 		D66BB6A422CE47EC006B4427 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB6A322CE47EC006B4427 /* Plant.swift */; };
+		D6FE3C1922DA09E6003A7714 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE3C1822DA09E6003A7714 /* Sensor.swift */; };
+		D6FE3C1B22DA0FCC003A7714 /* SmartPot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE3C1A22DA0FCC003A7714 /* SmartPot.swift */; };
+		D6FE3C1F22DA1377003A7714 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE3C1E22DA1377003A7714 /* R.generated.swift */; };
+		D6FE3C2122DA164F003A7714 /* ShopDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE3C2022DA164F003A7714 /* ShopDataController.swift */; };
+		D6FE3C2522DA17BA003A7714 /* ShopVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE3C2422DA17BA003A7714 /* ShopVCDataSource.swift */; };
+		D6FE3C2822DA18EA003A7714 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE3C2622DA18EA003A7714 /* ShopTableViewCell.swift */; };
+		D6FE3C2922DA18EA003A7714 /* ShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6FE3C2722DA18EA003A7714 /* ShopTableViewCell.xib */; };
+		D6FE3C2B22DA1E4D003A7714 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FE3C2A22DA1E4D003A7714 /* Rswift.framework */; };
+		D6FE3C2C22DA1E4D003A7714 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6FE3C2A22DA1E4D003A7714 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6FE3C2E22DA21D7003A7714 /* Extension+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE3C2D22DA21D7003A7714 /* Extension+UITableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +60,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D624F7C122CE707C00B41FF6 /* SDWebImage.framework in Embed Frameworks */,
+				D6FE3C2C22DA1E4D003A7714 /* Rswift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,12 +96,21 @@
 		D66BB68C22CE47AF006B4427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsOverviewVC.swift; sourceTree = "<group>"; };
-		D66BB69222CE47AF006B4427 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D66BB69222CE47AF006B4427 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		D66BB69522CE47AF006B4427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D66BB69722CE47AF006B4427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D66BB69A22CE47AF006B4427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D66BB69C22CE47AF006B4427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D66BB6A322CE47EC006B4427 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		D6FE3C1822DA09E6003A7714 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		D6FE3C1A22DA0FCC003A7714 /* SmartPot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPot.swift; sourceTree = "<group>"; };
+		D6FE3C1E22DA1377003A7714 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		D6FE3C2022DA164F003A7714 /* ShopDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDataController.swift; sourceTree = "<group>"; };
+		D6FE3C2422DA17BA003A7714 /* ShopVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVCDataSource.swift; sourceTree = "<group>"; };
+		D6FE3C2622DA18EA003A7714 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
+		D6FE3C2722DA18EA003A7714 /* ShopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTableViewCell.xib; sourceTree = "<group>"; };
+		D6FE3C2A22DA1E4D003A7714 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = ../frameworks/Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
+		D6FE3C2D22DA21D7003A7714 /* Extension+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D624F7C022CE707C00B41FF6 /* SDWebImage.framework in Frameworks */,
+				D6FE3C2B22DA1E4D003A7714 /* Rswift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +141,8 @@
 				D624F7BA22CE6F8400B41FF6 /* UserPlantCell.xib */,
 				D624F7EB22CF615F00B41FF6 /* CommunityTableViewCell.swift */,
 				D624F7EC22CF615F00B41FF6 /* CommunityTableViewCell.xib */,
+				D6FE3C2622DA18EA003A7714 /* ShopTableViewCell.swift */,
+				D6FE3C2722DA18EA003A7714 /* ShopTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -127,6 +150,7 @@
 		D624F7BE22CE707C00B41FF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6FE3C2A22DA1E4D003A7714 /* Rswift.framework */,
 				D624F7BF22CE707C00B41FF6 /* SDWebImage.framework */,
 			);
 			name = Frameworks;
@@ -137,6 +161,7 @@
 			children = (
 				D624F7C422CE738B00B41FF6 /* UserPlantDataController.swift */,
 				D624F7EF22CF62EE00B41FF6 /* CommunityDataController.swift */,
+				D6FE3C2022DA164F003A7714 /* ShopDataController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +180,7 @@
 			children = (
 				D624F7CD22CE749800B41FF6 /* UserPlantDataSource.swift */,
 				D624F7F322CF64F700B41FF6 /* CommunityDataDataSource.swift */,
+				D6FE3C2422DA17BA003A7714 /* ShopVCDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -175,6 +201,7 @@
 			children = (
 				D624F7DF22CE918500B41FF6 /* Extension+NSLayoutConstraints.swift */,
 				D624F7F922CF665500B41FF6 /* Extension+UIViewController.swift */,
+				D6FE3C2D22DA21D7003A7714 /* Extension+UITableViewDelegate.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -227,6 +254,7 @@
 				D66BB6A522CE484E006B4427 /* ViewControllers */,
 				D66BB6A222CE47D2006B4427 /* Model */,
 				D66BB68C22CE47AF006B4427 /* AppDelegate.swift */,
+				D6FE3C1E22DA1377003A7714 /* R.generated.swift */,
 				D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */,
 				D66BB69422CE47AF006B4427 /* Main.storyboard */,
 				D66BB69722CE47AF006B4427 /* Assets.xcassets */,
@@ -242,6 +270,8 @@
 				D66BB6A322CE47EC006B4427 /* Plant.swift */,
 				D624F7E422CF5EFB00B41FF6 /* CommunityPlant.swift */,
 				D624F7F122CF638400B41FF6 /* Resource.swift */,
+				D6FE3C1822DA09E6003A7714 /* Sensor.swift */,
+				D6FE3C1A22DA0FCC003A7714 /* SmartPot.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,7 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */,
-				D66BB69222CE47AF006B4427 /* SecondViewController.swift */,
+				D66BB69222CE47AF006B4427 /* ShopViewController.swift */,
 				D624F7E922CF60CC00B41FF6 /* CommunityViewController.swift */,
 				D624F7F722CF660400B41FF6 /* LoadingViewController.swift */,
 			);
@@ -264,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D66BB69F22CE47AF006B4427 /* Build configuration list for PBXNativeTarget "Planty" */;
 			buildPhases = (
+				D6FE3C1C22DA1198003A7714 /* ShellScript */,
 				D66BB68522CE47AF006B4427 /* Sources */,
 				D66BB68622CE47AF006B4427 /* Frameworks */,
 				D66BB68722CE47AF006B4427 /* Resources */,
@@ -322,6 +353,7 @@
 				D66BB69822CE47AF006B4427 /* Assets.xcassets in Resources */,
 				D66BB69622CE47AF006B4427 /* Main.storyboard in Resources */,
 				D624F7EE22CF615F00B41FF6 /* CommunityTableViewCell.xib in Resources */,
+				D6FE3C2922DA18EA003A7714 /* ShopTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +369,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/../frameworks/Carthage/Build/iOS/SDWebImage.framework",
+				"$(SRCROOT)/../frameworks/Carthage/Build/iOS/Rswift.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -347,6 +380,26 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		D6FE3C1C22DA1198003A7714 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"",
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Planty/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/rswift\" generate  \"$SRCROOT/Planty/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -356,22 +409,29 @@
 			files = (
 				D624F7CB22CE741600B41FF6 /* PaginationViewState.swift in Sources */,
 				D624F7E322CF5E5C00B41FF6 /* Constants.swift in Sources */,
-				D66BB69322CE47AF006B4427 /* SecondViewController.swift in Sources */,
+				D66BB69322CE47AF006B4427 /* ShopViewController.swift in Sources */,
+				D6FE3C1B22DA0FCC003A7714 /* SmartPot.swift in Sources */,
 				D624F7ED22CF615F00B41FF6 /* CommunityTableViewCell.swift in Sources */,
+				D6FE3C1922DA09E6003A7714 /* Sensor.swift in Sources */,
 				D66BB69122CE47AF006B4427 /* PlantsOverviewVC.swift in Sources */,
 				D624F7D822CE767E00B41FF6 /* UITableView+Identifiable.swift in Sources */,
+				D6FE3C2E22DA21D7003A7714 /* Extension+UITableViewDelegate.swift in Sources */,
 				D66BB6A422CE47EC006B4427 /* Plant.swift in Sources */,
 				D624F7F822CF660400B41FF6 /* LoadingViewController.swift in Sources */,
 				D624F7FA22CF665500B41FF6 /* Extension+UIViewController.swift in Sources */,
+				D6FE3C1F22DA1377003A7714 /* R.generated.swift in Sources */,
 				D624F7E022CE918500B41FF6 /* Extension+NSLayoutConstraints.swift in Sources */,
 				D624F7F222CF638400B41FF6 /* Resource.swift in Sources */,
 				D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */,
+				D6FE3C2822DA18EA003A7714 /* ShopTableViewCell.swift in Sources */,
 				D624F7F422CF64F700B41FF6 /* CommunityDataDataSource.swift in Sources */,
 				D624F7F022CF62EE00B41FF6 /* CommunityDataController.swift in Sources */,
 				D624F7EA22CF60CC00B41FF6 /* CommunityViewController.swift in Sources */,
 				D624F7C522CE738B00B41FF6 /* UserPlantDataController.swift in Sources */,
 				D624F7E522CF5EFB00B41FF6 /* CommunityPlant.swift in Sources */,
 				D624F7C822CE73E700B41FF6 /* ControllerViewModel.swift in Sources */,
+				D6FE3C2522DA17BA003A7714 /* ShopVCDataSource.swift in Sources */,
+				D6FE3C2122DA164F003A7714 /* ShopDataController.swift in Sources */,
 				D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */,
 				D624F7BB22CE6F8400B41FF6 /* UserPlantCell.swift in Sources */,
 				D624F7B722CE6B2A00B41FF6 /* Mock.swift in Sources */,
