@@ -17,12 +17,14 @@ struct R: Rswift.Validatable {
   }
   
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `PlantsScene`.
+    static let plantsScene = _R.storyboard.plantsScene()
     
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
@@ -35,6 +37,13 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
+    }
+    #endif
+    
+    #if os(iOS) || os(tvOS)
+    /// `UIStoryboard(name: "PlantsScene", bundle: ...)`
+    static func plantsScene(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.plantsScene)
     }
     #endif
     
@@ -138,10 +147,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 5 nibs.
   struct nib {
     /// Nib `CommunityTableViewCell`.
     static let communityTableViewCell = _R.nib._CommunityTableViewCell()
+    /// Nib `PlantDetailTableViewCell`.
+    static let plantDetailTableViewCell = _R.nib._PlantDetailTableViewCell()
+    /// Nib `RainTVCell`.
+    static let rainTVCell = _R.nib._RainTVCell()
     /// Nib `ShopTableViewCell`.
     static let shopTableViewCell = _R.nib._ShopTableViewCell()
     /// Nib `UserPlantCell`.
@@ -152,6 +165,22 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.communityTableViewCell) instead")
     static func communityTableViewCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.communityTableViewCell)
+    }
+    #endif
+    
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "PlantDetailTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.plantDetailTableViewCell) instead")
+    static func plantDetailTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.plantDetailTableViewCell)
+    }
+    #endif
+    
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "RainTVCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.rainTVCell) instead")
+    static func rainTVCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.rainTVCell)
     }
     #endif
     
@@ -173,6 +202,14 @@ struct R: Rswift.Validatable {
     
     static func communityTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CommunityTableViewCell? {
       return R.nib.communityTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CommunityTableViewCell
+    }
+    
+    static func plantDetailTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PlantDetailTableViewCell? {
+      return R.nib.plantDetailTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PlantDetailTableViewCell
+    }
+    
+    static func rainTVCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RainTVCell? {
+      return R.nib.rainTVCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RainTVCell
     }
     
     static func shopTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ShopTableViewCell? {
@@ -219,6 +256,28 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
+    struct _PlantDetailTableViewCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "PlantDetailTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PlantDetailTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PlantDetailTableViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _RainTVCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "RainTVCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> RainTVCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RainTVCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     struct _ShopTableViewCell: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "ShopTableViewCell"
@@ -254,6 +313,9 @@ struct _R: Rswift.Validatable {
       #if os(iOS) || os(tvOS)
       try main.validate()
       #endif
+      #if os(iOS) || os(tvOS)
+      try plantsScene.validate()
+      #endif
     }
     
     #if os(iOS) || os(tvOS)
@@ -274,7 +336,7 @@ struct _R: Rswift.Validatable {
     
     #if os(iOS) || os(tvOS)
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UIKit.UITabBarController
+      typealias InitialController = TabBarController
       
       let bundle = R.hostingBundle
       let name = "Main"
@@ -282,11 +344,34 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if UIKit.UIImage(named: "gear", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'gear' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "person.circle", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'person.circle' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "plus", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'plus' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "star.circle", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'star.circle' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "tag", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tag' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+      }
+      
+      fileprivate init() {}
+    }
+    #endif
+    
+    #if os(iOS) || os(tvOS)
+    struct plantsScene: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = UIKit.UINavigationController
+      
+      let addProductVC = StoryboardViewControllerResource<AddProductViewController>(identifier: "AddProductVC")
+      let bundle = R.hostingBundle
+      let name = "PlantsScene"
+      
+      func addProductVC(_: Void = ()) -> AddProductViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: addProductVC)
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "camera.viewfinder", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'camera.viewfinder' is used in storyboard 'PlantsScene', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "plus", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'plus' is used in storyboard 'PlantsScene', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "star.circle", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'star.circle' is used in storyboard 'PlantsScene', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+        if _R.storyboard.plantsScene().addProductVC() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'addProductVC' could not be loaded from storyboard 'PlantsScene' as 'AddProductViewController'.") }
       }
       
       fileprivate init() {}

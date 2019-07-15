@@ -23,6 +23,10 @@ final class PlantsOverviewVC: UIViewController {
 		return controller.viewModel
 	}
 
+	@IBAction func showAddProductController(_ sender: Any) {
+		App.current.flowCoordinator?.showAddProductViewController()
+	}
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		tableView.delegate = self
@@ -50,5 +54,10 @@ final class PlantsOverviewVC: UIViewController {
 	}
 }
 
-extension PlantsOverviewVC: UITableViewDelegate {}
+extension PlantsOverviewVC: UITableViewDelegate {
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let item = controller.data[indexPath.row]
+		App.current.flowCoordinator?.pushPlantDetailView(item)
+	}
+}
 

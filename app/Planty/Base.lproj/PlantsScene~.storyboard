@@ -7,6 +7,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Plants OverviewVC-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="PlantsOverviewVC" customModule="Planty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cdm-VH-9S7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="cdm-VH-9S7" secondAttribute="bottom" id="7Uw-eP-kVo"/>
+                            <constraint firstItem="cdm-VH-9S7" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="CW0-Wl-h8S"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="cdm-VH-9S7" secondAttribute="trailing" id="eKg-wi-mbL"/>
+                            <constraint firstItem="cdm-VH-9S7" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="qu7-1j-YQu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8gg-70-X3g">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="Pum-cs-WSi">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addNewPlantButton" destination="Pum-cs-WSi" id="HSk-tn-JWM"/>
+                        <outlet property="tableView" destination="cdm-VH-9S7" id="ZVX-T7-YGe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659.4202898550725" y="-320.08928571428572"/>
+        </scene>
         <!--Shop View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -41,14 +77,14 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" customClass="TabBarController" customModule="Planty" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Oii-Xt-sVh" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="GlG-27-Nmq" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="lV8-ym-JO1" kind="relationship" relationship="viewControllers" id="VrI-yo-tXh"/>
                         <segue destination="5Gg-h3-7Uy" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="eea-wD-AHb" kind="relationship" relationship="viewControllers" id="OW8-SU-XMh"/>
@@ -57,6 +93,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1301" y="-333"/>
+        </scene>
+        <!--Overview-->
+        <scene sceneID="uE5-99-MGs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GlG-27-Nmq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Overview" image="star.circle" catalog="system" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dfS-vz-HXV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="sll-oA-2gY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ntk-oe-5Ca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
         </scene>
         <!--Shop-->
         <scene sceneID="dWO-Kn-6gt">
@@ -164,20 +219,12 @@
             </objects>
             <point key="canvasLocation" x="-3100.0000000000005" y="566.51785714285711"/>
         </scene>
-        <!--PlantsScene-->
-        <scene sceneID="1nb-JH-c4o">
-            <objects>
-                <viewControllerPlaceholder storyboardName="PlantsScene" id="Oii-Xt-sVh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hEz-zG-U0A"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Z2-U3-Ymy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
-        </scene>
     </scenes>
     <resources>
         <image name="gear" catalog="system" width="64" height="60"/>
         <image name="person.circle" catalog="system" width="64" height="62"/>
+        <image name="plus" catalog="system" width="64" height="58"/>
+        <image name="star.circle" catalog="system" width="64" height="62"/>
         <image name="tag" catalog="system" width="64" height="58"/>
     </resources>
 </document>

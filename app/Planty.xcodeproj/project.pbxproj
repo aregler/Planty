@@ -32,6 +32,24 @@
 		D624F7F422CF64F700B41FF6 /* CommunityDataDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7F322CF64F700B41FF6 /* CommunityDataDataSource.swift */; };
 		D624F7F822CF660400B41FF6 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7F722CF660400B41FF6 /* LoadingViewController.swift */; };
 		D624F7FA22CF665500B41FF6 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7F922CF665500B41FF6 /* Extension+UIViewController.swift */; };
+		D64C627C22DC7C41006AED93 /* PlantsScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64C627A22DC7C41006AED93 /* PlantsScene.storyboard */; };
+		D64C628022DC7D1B006AED93 /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C627F22DC7D1B006AED93 /* PlantDetailViewController.swift */; };
+		D64C628422DC7EB9006AED93 /* PlantDetailDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C628322DC7EB9006AED93 /* PlantDetailDataController.swift */; };
+		D64C628722DC7F0E006AED93 /* PlantDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C628522DC7F0E006AED93 /* PlantDetailTableViewCell.swift */; };
+		D64C628822DC7F0E006AED93 /* PlantDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64C628622DC7F0E006AED93 /* PlantDetailTableViewCell.xib */; };
+		D64C628B22DC8390006AED93 /* PlantDetailVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C628A22DC8390006AED93 /* PlantDetailVCDataSource.swift */; };
+		D64C628D22DC859A006AED93 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C628C22DC859A006AED93 /* FlowCoordinator.swift */; };
+		D64C628F22DC8659006AED93 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C628E22DC8658006AED93 /* State.swift */; };
+		D64C629122DC8660006AED93 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C629022DC8660006AED93 /* App.swift */; };
+		D64C629422DC8713006AED93 /* FlowCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C629322DC8713006AED93 /* FlowCoordinatorType.swift */; };
+		D64C629622DC87CB006AED93 /* TabCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C629522DC87CB006AED93 /* TabCoordinatorType.swift */; };
+		D64C629822DC88E4006AED93 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C629722DC88E4006AED93 /* TabBarController.swift */; };
+		D64C629C22DC906E006AED93 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64C629B22DC906E006AED93 /* Charts.framework */; };
+		D64C629D22DC906E006AED93 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D64C629B22DC906E006AED93 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D64C62A022DC90CD006AED93 /* RainTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C629E22DC90CD006AED93 /* RainTVCell.swift */; };
+		D64C62A122DC90CD006AED93 /* RainTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64C629F22DC90CD006AED93 /* RainTVCell.xib */; };
+		D64C62A322DC9DAE006AED93 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C62A222DC9DAE006AED93 /* ScannerViewController.swift */; };
+		D64C62A922DCA1BA006AED93 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C62A822DCA1BA006AED93 /* AddProductViewController.swift */; };
 		D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68C22CE47AF006B4427 /* AppDelegate.swift */; };
 		D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */; };
 		D66BB69122CE47AF006B4427 /* PlantsOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */; };
@@ -59,6 +77,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D64C629D22DC906E006AED93 /* Charts.framework in Embed Frameworks */,
 				D624F7C122CE707C00B41FF6 /* SDWebImage.framework in Embed Frameworks */,
 				D6FE3C2C22DA1E4D003A7714 /* Rswift.framework in Embed Frameworks */,
 			);
@@ -92,6 +111,23 @@
 		D624F7F322CF64F700B41FF6 /* CommunityDataDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDataDataSource.swift; sourceTree = "<group>"; };
 		D624F7F722CF660400B41FF6 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		D624F7F922CF665500B41FF6 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		D64C627B22DC7C41006AED93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Planty/Base.lproj/PlantsScene.storyboard; sourceTree = "<group>"; };
+		D64C627F22DC7D1B006AED93 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
+		D64C628322DC7EB9006AED93 /* PlantDetailDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailDataController.swift; sourceTree = "<group>"; };
+		D64C628522DC7F0E006AED93 /* PlantDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailTableViewCell.swift; sourceTree = "<group>"; };
+		D64C628622DC7F0E006AED93 /* PlantDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantDetailTableViewCell.xib; sourceTree = "<group>"; };
+		D64C628A22DC8390006AED93 /* PlantDetailVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailVCDataSource.swift; sourceTree = "<group>"; };
+		D64C628C22DC859A006AED93 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		D64C628E22DC8658006AED93 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		D64C629022DC8660006AED93 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		D64C629322DC8713006AED93 /* FlowCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorType.swift; sourceTree = "<group>"; };
+		D64C629522DC87CB006AED93 /* TabCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinatorType.swift; sourceTree = "<group>"; };
+		D64C629722DC88E4006AED93 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D64C629B22DC906E006AED93 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = ../frameworks/Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		D64C629E22DC90CD006AED93 /* RainTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainTVCell.swift; sourceTree = "<group>"; };
+		D64C629F22DC90CD006AED93 /* RainTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RainTVCell.xib; sourceTree = "<group>"; };
+		D64C62A222DC9DAE006AED93 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		D64C62A822DCA1BA006AED93 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		D66BB68922CE47AF006B4427 /* Planty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66BB68C22CE47AF006B4427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64C629C22DC906E006AED93 /* Charts.framework in Frameworks */,
 				D624F7C022CE707C00B41FF6 /* SDWebImage.framework in Frameworks */,
 				D6FE3C2B22DA1E4D003A7714 /* Rswift.framework in Frameworks */,
 			);
@@ -137,6 +174,7 @@
 		D624F7B822CE6F5700B41FF6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D64C628122DC7DB6006AED93 /* DetailViewControllerCells */,
 				D624F7B922CE6F8400B41FF6 /* UserPlantCell.swift */,
 				D624F7BA22CE6F8400B41FF6 /* UserPlantCell.xib */,
 				D624F7EB22CF615F00B41FF6 /* CommunityTableViewCell.swift */,
@@ -150,6 +188,7 @@
 		D624F7BE22CE707C00B41FF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D64C629B22DC906E006AED93 /* Charts.framework */,
 				D6FE3C2A22DA1E4D003A7714 /* Rswift.framework */,
 				D624F7BF22CE707C00B41FF6 /* SDWebImage.framework */,
 			);
@@ -159,6 +198,7 @@
 		D624F7C322CE737C00B41FF6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D64C628222DC7EA8006AED93 /* DetailViewController */,
 				D624F7C422CE738B00B41FF6 /* UserPlantDataController.swift */,
 				D624F7EF22CF62EE00B41FF6 /* CommunityDataController.swift */,
 				D6FE3C2022DA164F003A7714 /* ShopDataController.swift */,
@@ -178,6 +218,7 @@
 		D624F7CC22CE748900B41FF6 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				D64C628922DC8378006AED93 /* DetailViewControllers */,
 				D624F7CD22CE749800B41FF6 /* UserPlantDataSource.swift */,
 				D624F7F322CF64F700B41FF6 /* CommunityDataDataSource.swift */,
 				D6FE3C2422DA17BA003A7714 /* ShopVCDataSource.swift */,
@@ -210,6 +251,11 @@
 			isa = PBXGroup;
 			children = (
 				D624F7E222CF5E5C00B41FF6 /* Constants.swift */,
+				D64C629022DC8660006AED93 /* App.swift */,
+				D64C628E22DC8658006AED93 /* State.swift */,
+				D64C629322DC8713006AED93 /* FlowCoordinatorType.swift */,
+				D64C628C22DC859A006AED93 /* FlowCoordinator.swift */,
+				D64C629522DC87CB006AED93 /* TabCoordinatorType.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -220,6 +266,51 @@
 				D624F7E722CF5FF800B41FF6 /* NetworkService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D64C627D22DC7C80006AED93 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D64C627A22DC7C41006AED93 /* PlantsScene.storyboard */,
+				D66BB69422CE47AF006B4427 /* Main.storyboard */,
+				D66BB69922CE47AF006B4427 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D64C627E22DC7CAA006AED93 /* DetailViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D64C627F22DC7D1B006AED93 /* PlantDetailViewController.swift */,
+			);
+			path = DetailViewControllers;
+			sourceTree = "<group>";
+		};
+		D64C628122DC7DB6006AED93 /* DetailViewControllerCells */ = {
+			isa = PBXGroup;
+			children = (
+				D64C628522DC7F0E006AED93 /* PlantDetailTableViewCell.swift */,
+				D64C628622DC7F0E006AED93 /* PlantDetailTableViewCell.xib */,
+				D64C629E22DC90CD006AED93 /* RainTVCell.swift */,
+				D64C629F22DC90CD006AED93 /* RainTVCell.xib */,
+			);
+			path = DetailViewControllerCells;
+			sourceTree = "<group>";
+		};
+		D64C628222DC7EA8006AED93 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D64C628322DC7EB9006AED93 /* PlantDetailDataController.swift */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		D64C628922DC8378006AED93 /* DetailViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D64C628A22DC8390006AED93 /* PlantDetailVCDataSource.swift */,
+			);
+			path = DetailViewControllers;
 			sourceTree = "<group>";
 		};
 		D66BB68022CE47AF006B4427 = {
@@ -254,11 +345,10 @@
 				D66BB6A522CE484E006B4427 /* ViewControllers */,
 				D66BB6A222CE47D2006B4427 /* Model */,
 				D66BB68C22CE47AF006B4427 /* AppDelegate.swift */,
+				D64C627D22DC7C80006AED93 /* Storyboards */,
 				D6FE3C1E22DA1377003A7714 /* R.generated.swift */,
 				D66BB68E22CE47AF006B4427 /* SceneDelegate.swift */,
-				D66BB69422CE47AF006B4427 /* Main.storyboard */,
 				D66BB69722CE47AF006B4427 /* Assets.xcassets */,
-				D66BB69922CE47AF006B4427 /* LaunchScreen.storyboard */,
 				D66BB69C22CE47AF006B4427 /* Info.plist */,
 			);
 			path = Planty;
@@ -279,10 +369,14 @@
 		D66BB6A522CE484E006B4427 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D64C627E22DC7CAA006AED93 /* DetailViewControllers */,
 				D66BB69022CE47AF006B4427 /* PlantsOverviewVC.swift */,
 				D66BB69222CE47AF006B4427 /* ShopViewController.swift */,
 				D624F7E922CF60CC00B41FF6 /* CommunityViewController.swift */,
 				D624F7F722CF660400B41FF6 /* LoadingViewController.swift */,
+				D64C629722DC88E4006AED93 /* TabBarController.swift */,
+				D64C62A222DC9DAE006AED93 /* ScannerViewController.swift */,
+				D64C62A822DCA1BA006AED93 /* AddProductViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -350,10 +444,13 @@
 			files = (
 				D624F7BC22CE6F8400B41FF6 /* UserPlantCell.xib in Resources */,
 				D66BB69B22CE47AF006B4427 /* LaunchScreen.storyboard in Resources */,
+				D64C628822DC7F0E006AED93 /* PlantDetailTableViewCell.xib in Resources */,
 				D66BB69822CE47AF006B4427 /* Assets.xcassets in Resources */,
 				D66BB69622CE47AF006B4427 /* Main.storyboard in Resources */,
 				D624F7EE22CF615F00B41FF6 /* CommunityTableViewCell.xib in Resources */,
 				D6FE3C2922DA18EA003A7714 /* ShopTableViewCell.xib in Resources */,
+				D64C627C22DC7C41006AED93 /* PlantsScene.storyboard in Resources */,
+				D64C62A122DC90CD006AED93 /* RainTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +467,7 @@
 			inputPaths = (
 				"$(SRCROOT)/../frameworks/Carthage/Build/iOS/SDWebImage.framework",
 				"$(SRCROOT)/../frameworks/Carthage/Build/iOS/Rswift.framework",
+				"$(SRCROOT)/../frameworks/Carthage/Build/iOS/Charts.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -420,23 +518,36 @@
 				D624F7F822CF660400B41FF6 /* LoadingViewController.swift in Sources */,
 				D624F7FA22CF665500B41FF6 /* Extension+UIViewController.swift in Sources */,
 				D6FE3C1F22DA1377003A7714 /* R.generated.swift in Sources */,
+				D64C62A322DC9DAE006AED93 /* ScannerViewController.swift in Sources */,
+				D64C629122DC8660006AED93 /* App.swift in Sources */,
+				D64C629422DC8713006AED93 /* FlowCoordinatorType.swift in Sources */,
+				D64C62A922DCA1BA006AED93 /* AddProductViewController.swift in Sources */,
+				D64C62A022DC90CD006AED93 /* RainTVCell.swift in Sources */,
 				D624F7E022CE918500B41FF6 /* Extension+NSLayoutConstraints.swift in Sources */,
+				D64C628422DC7EB9006AED93 /* PlantDetailDataController.swift in Sources */,
 				D624F7F222CF638400B41FF6 /* Resource.swift in Sources */,
 				D66BB68D22CE47AF006B4427 /* AppDelegate.swift in Sources */,
 				D6FE3C2822DA18EA003A7714 /* ShopTableViewCell.swift in Sources */,
 				D624F7F422CF64F700B41FF6 /* CommunityDataDataSource.swift in Sources */,
 				D624F7F022CF62EE00B41FF6 /* CommunityDataController.swift in Sources */,
 				D624F7EA22CF60CC00B41FF6 /* CommunityViewController.swift in Sources */,
+				D64C628B22DC8390006AED93 /* PlantDetailVCDataSource.swift in Sources */,
 				D624F7C522CE738B00B41FF6 /* UserPlantDataController.swift in Sources */,
+				D64C629822DC88E4006AED93 /* TabBarController.swift in Sources */,
+				D64C628022DC7D1B006AED93 /* PlantDetailViewController.swift in Sources */,
 				D624F7E522CF5EFB00B41FF6 /* CommunityPlant.swift in Sources */,
 				D624F7C822CE73E700B41FF6 /* ControllerViewModel.swift in Sources */,
+				D64C629622DC87CB006AED93 /* TabCoordinatorType.swift in Sources */,
+				D64C628D22DC859A006AED93 /* FlowCoordinator.swift in Sources */,
 				D6FE3C2522DA17BA003A7714 /* ShopVCDataSource.swift in Sources */,
 				D6FE3C2122DA164F003A7714 /* ShopDataController.swift in Sources */,
 				D66BB68F22CE47AF006B4427 /* SceneDelegate.swift in Sources */,
 				D624F7BB22CE6F8400B41FF6 /* UserPlantCell.swift in Sources */,
 				D624F7B722CE6B2A00B41FF6 /* Mock.swift in Sources */,
+				D64C628722DC7F0E006AED93 /* PlantDetailTableViewCell.swift in Sources */,
 				D624F7D622CE767E00B41FF6 /* UICollectionView+Identifiable.swift in Sources */,
 				D624F7E822CF5FF800B41FF6 /* NetworkService.swift in Sources */,
+				D64C628F22DC8659006AED93 /* State.swift in Sources */,
 				D624F7D922CE767E00B41FF6 /* NibIdentifiable.swift in Sources */,
 				D624F7CE22CE749800B41FF6 /* UserPlantDataSource.swift in Sources */,
 				D624F7D722CE767E00B41FF6 /* ClassIdentifiable.swift in Sources */,
@@ -446,6 +557,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D64C627A22DC7C41006AED93 /* PlantsScene.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D64C627B22DC7C41006AED93 /* Base */,
+			);
+			name = PlantsScene.storyboard;
+			sourceTree = "<group>";
+		};
 		D66BB69422CE47AF006B4427 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

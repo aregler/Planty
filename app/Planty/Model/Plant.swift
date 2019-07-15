@@ -15,7 +15,7 @@ struct Plant {
 	let description: PlantDescription
 }
 
-enum PlantKind {
+enum PlantKind: String {
 	case citrus
 }
 
