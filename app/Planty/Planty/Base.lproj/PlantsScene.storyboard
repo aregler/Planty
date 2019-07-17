@@ -79,17 +79,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jRu-xz-z47">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="bitte id eingeben" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jRu-xz-z47">
                                 <rect key="frame" x="100" y="201" width="183" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="6L8-ri-WzL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="postal-code"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZt-ln-1gN">
                                 <rect key="frame" x="315" y="203" width="79" height="30"/>
                                 <state key="normal" title="Hinzufügen"/>
+                                <connections>
+                                    <action selector="onAddPlant:" destination="D1x-KZ-yW7" eventType="touchUpInside" id="nIp-XG-Xhi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXw-Nw-UhX">
                                 <rect key="frame" x="150" y="721.66666666666663" width="114" height="111.33333333333337"/>

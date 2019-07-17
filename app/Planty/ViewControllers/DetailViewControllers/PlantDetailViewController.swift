@@ -40,6 +40,7 @@ final class PlantDetailViewController: UIViewController {
 		bindViewModel()
 		tableView.dataSource = dataSource
 		tableView.delegate = self
+		title = controller.plant.name
         // Do any additional setup after loading the view.
     }
 

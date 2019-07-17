@@ -11,26 +11,30 @@ import UIKit
 
 class RainTVCell: UITableViewCell, NibIdentifiable {
 
-	@IBOutlet weak var lineChartView: BarChartView!
+	@IBOutlet weak var barChartView: HorizontalBarChartView!
+
+	func configure(with plant: Plant) {
+
+		barChartView.data = App.current.database.getMoistureData(for: plant)
+
+		let xAxis = barChartView.xAxis
+		xAxis.labelPosition = .bottom
+		xAxis.drawAxisLineEnabled = true
+		xAxis.valueFormatter = DayAxisValueFormatter(chart: self.barChartView)
+
+		let leftAxis = barChartView.leftAxis
+		leftAxis.drawAxisLineEnabled = true
+		leftAxis.drawGridLinesEnabled = true
+		leftAxis.axisMinimum = 0
+		leftAxis.axisMaximum = 100
+
+		let rightAxis = barChartView.rightAxis
+		rightAxis.enabled = false
+
+	}
 
 	override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-
-		// mock
-
-		let entries =  BarChartDataSet()
-		let e1 = BarChartDataEntry(x: 0, y: 3)
-		let e2 = BarChartDataEntry(x: 2, y: 1)
-		let e3 = BarChartDataEntry(x: 4, y: 4)
-		entries.stackLabels = ["Montag", "Dienstag", "Mittwoch"]
-		entries.append(e1)
-		entries.append(e2)
-		entries.append(e3)
-		entries.label = "Regen"
-
-		let d = BarChartData(dataSet: entries)
-		lineChartView?.data = d
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

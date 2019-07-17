@@ -9,6 +9,7 @@
 import UIKit
 
 struct State {
+	let database: MockDatabase
 	let flowCoordinator: FlowCoordinatorType?
 	let isTest: Bool
 	let isUITest: Bool
@@ -17,11 +18,14 @@ struct State {
 	let tabCoordinator: TabCoordinatorType?
 
 
-	init(flowCoordinator: FlowCoordinatorType? = nil,
-				isTest: Bool = NSClassFromString("XCTestCase") != nil,
-				isVoiceOverRunning: Bool = UIAccessibility.isVoiceOverRunning,
-				shouldAnimate: @escaping () -> Bool = { !(App.current.isVoiceOverRunning || UIAccessibility.isReduceMotionEnabled) },
-				tabCoordinator: TabCoordinatorType? = nil) {
+	init(db: MockDatabase = MockDatabase(),
+		flowCoordinator: FlowCoordinatorType? = nil,
+		isTest: Bool = NSClassFromString("XCTestCase") != nil,
+		isVoiceOverRunning: Bool = UIAccessibility.isVoiceOverRunning,
+		shouldAnimate: @escaping () -> Bool = { !(App.current.isVoiceOverRunning || UIAccessibility.isReduceMotionEnabled) },
+		tabCoordinator: TabCoordinatorType? = nil) {
+
+		self.database = db
 		let isUITest = CommandLine.arguments.contains("--uitesting")
 		self.flowCoordinator = flowCoordinator
 		self.isUITest = isUITest

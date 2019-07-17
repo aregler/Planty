@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="312" height="219"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-jD-LCM" customClass="BarChartView" customModule="Charts">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-jD-LCM" customClass="HorizontalBarChartView" customModule="Charts">
                         <rect key="frame" x="0.0" y="0.0" width="312" height="219"/>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -33,7 +33,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="lineChartView" destination="fbT-jD-LCM" id="GDz-hW-x0D"/>
+                <outlet property="barChartView" destination="fbT-jD-LCM" id="GDz-hW-x0D"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="179.12946428571428"/>
         </tableViewCell>

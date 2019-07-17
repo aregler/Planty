@@ -28,8 +28,9 @@ final class PlantDetailVCDataSource: NSObject, UITableViewDataSource {
 			let cell: PlantDetailTableViewCell = tableView.dequeueReusableCell()
 			cell.configure(with: plant)
 			return cell
-		case .chart:
+		case let .chart(plant):
 			let cell: RainTVCell = tableView.dequeueReusableCell()
+			cell.configure(with: plant)
 			return cell
 		}
 	}

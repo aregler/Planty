@@ -33,22 +33,25 @@ struct App {
 }
 
 extension App {
-	static func push(
-							flowCoordinator: FlowCoordinatorType? = App.current.flowCoordinator,
-							isVoiceOverRunning: Bool = App.current.isVoiceOverRunning,
-							isTest: Bool = App.current.isTest,
-							tabCoordinator: TabCoordinatorType? = App.current.tabCoordinator) {
-		push(state: State(flowCoordinator: flowCoordinator,
+	static func push(database: MockDatabase = App.current.database,
+					flowCoordinator: FlowCoordinatorType? = App.current.flowCoordinator,
+					isVoiceOverRunning: Bool = App.current.isVoiceOverRunning,
+					isTest: Bool = App.current.isTest,
+					tabCoordinator: TabCoordinatorType? = App.current.tabCoordinator) {
+		push(state: State(db: database,
+						  flowCoordinator: flowCoordinator,
 						  isTest: isTest,
 						  isVoiceOverRunning: isVoiceOverRunning,
 						  tabCoordinator: tabCoordinator))
 	}
 
-	static func replaceCurrent(flowCoordinator: FlowCoordinatorType? = App.current.flowCoordinator,
-									  isVoiceOverRunning: Bool = App.current.isVoiceOverRunning,
-									  isTest: Bool = App.current.isTest,
-									  tabCoordinator: TabCoordinatorType? = App.current.tabCoordinator) {
-		replaceCurrentState(with: State(flowCoordinator: flowCoordinator,
+	static func replaceCurrent(database: MockDatabase = App.current.database,
+							   flowCoordinator: FlowCoordinatorType? = App.current.flowCoordinator,
+							   isVoiceOverRunning: Bool = App.current.isVoiceOverRunning,
+							   isTest: Bool = App.current.isTest,
+							   tabCoordinator: TabCoordinatorType? = App.current.tabCoordinator) {
+		replaceCurrentState(with: State(db: database,
+										flowCoordinator: flowCoordinator,
 										isTest: isTest,
 										isVoiceOverRunning: isVoiceOverRunning,
 										tabCoordinator: tabCoordinator))

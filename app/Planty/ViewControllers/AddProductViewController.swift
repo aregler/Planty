@@ -18,16 +18,18 @@ class AddProductViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
 
-    /*
-    // MARK: - Navigation
+	@IBAction func onAddPlant(_ sender: Any) {
+		guard let idString = idTextField.text, let id = Int(idString) else { return }
+		if id == 7 {
+			App.current.database.add(plant: Mock.cucumber)
+		}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+		if id == 42 {
+			App.current.database.add(plant: Mock.strawberry)
+			Kit().scheduleMockNotification(for: Mock.strawberry)
+		}
 
+		navigationController?.popViewController(animated: true)
+	}
 }

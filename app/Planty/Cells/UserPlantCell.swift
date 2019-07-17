@@ -24,8 +24,7 @@ class UserPlantCell: UITableViewCell, NibIdentifiable {
 	func configure(with plant: Plant) {
 		plantImageView.sd_setImage(with: plant.image, completed: nil)
 		titleLabel.text = plant.name
-		detailLabel.text = "Giessen: in 2 Tagen"
-
+		detailLabel.text = "Feuchtigkeitslevel: " + String(format: "%.2f", plant.moistureLevel) + " %"
 		plantImageView.contentMode = .scaleAspectFill
 		plantImageView.layer.masksToBounds = true
 		plantImageView.layer.cornerRadius = 10

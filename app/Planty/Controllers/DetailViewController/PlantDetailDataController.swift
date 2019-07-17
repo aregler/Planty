@@ -10,7 +10,7 @@ import Foundation
 
 enum PlantDetailItem {
 	case plant(Plant)
-	case chart
+	case chart(Plant)
 }
 
 final class PlantDetailDataController {
@@ -24,7 +24,7 @@ final class PlantDetailDataController {
 	let dataSource = PlantDetailVCDataSource()
 	let viewModel = ControllerViewModel()
 
-	private let plant: Plant
+	let plant: Plant
 
 	init(plant: Plant) {
 		self.plant = plant
@@ -33,7 +33,7 @@ final class PlantDetailDataController {
 
 	func update() {
 		viewModel.state = .loading
-		data = [PlantDetailItem.plant(plant), .chart]
+		data = [PlantDetailItem.plant(plant), .chart(plant)]
 		viewModel.state = .loaded
 	}
 }

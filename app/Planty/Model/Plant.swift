@@ -9,14 +9,34 @@
 import Foundation
 
 struct Plant {
+
+	init(name: String, kind: PlantKind, image: URL, description: PlantDescription) {
+		self.name = name
+		self.kind = kind
+		self.image = image
+		self.description = description
+		self.moistureLevel = Float.random(in: 0 ..< 100)
+	}
+
 	let name: String
 	let kind: PlantKind
 	let image: URL
 	let description: PlantDescription
+	let moistureLevel: Float
 }
 
 enum PlantKind: String {
 	case citrus
+	case cucumber
+	case strawberry
+
+	var string: String {
+		switch self {
+		case .citrus: return "Zitrone 🍋"
+		case .cucumber: return "Gurke 🥒"
+		case .strawberry: return "Erdbeere 🍓"
+		}
+	}
 }
 
 struct PlantDescription {

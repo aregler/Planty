@@ -22,7 +22,7 @@ final class UserPlantDataController {
 
 	func update() {
 		viewModel.state = .loading
-		data = [Mock.citrusPlant, Mock.citrusPlant, Mock.citrusPlant]
+		data = App.current.database.getPlants()
 		viewModel.state = .loaded
 	}
 

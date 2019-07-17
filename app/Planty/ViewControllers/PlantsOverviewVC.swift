@@ -29,6 +29,7 @@ final class PlantsOverviewVC: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		bindViewModel()
 		tableView.delegate = self
 		tableView.dataSource = dataSource
 		tableView.register(cellType: UserPlantCell.self)
@@ -55,6 +56,11 @@ final class PlantsOverviewVC: UIViewController {
 }
 
 extension PlantsOverviewVC: UITableViewDelegate {
+
+	func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		cell.selectionStyle = .none
+	}
+
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		let item = controller.data[indexPath.row]
 		App.current.flowCoordinator?.pushPlantDetailView(item)

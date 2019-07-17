@@ -16,6 +16,7 @@ class PlantDetailTableViewCell: UITableViewCell, NibIdentifiable {
 	
     override func awakeFromNib() {
         super.awakeFromNib()
+		selectionStyle = .none
         // Initialization code
     }
 

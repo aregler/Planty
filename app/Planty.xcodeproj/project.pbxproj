@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D607BF2D22DF559500B6177D /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D607BF2C22DF559500B6177D /* DateFormatter.swift */; };
+		D607BF3022DF60B100B6177D /* MockDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D607BF2F22DF60B100B6177D /* MockDatabase.swift */; };
+		D607BF3322DF6B9900B6177D /* Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D607BF3222DF6B9900B6177D /* Kit.swift */; };
 		D624F7B722CE6B2A00B41FF6 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7B622CE6B2A00B41FF6 /* Mock.swift */; };
 		D624F7BB22CE6F8400B41FF6 /* UserPlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D624F7B922CE6F8400B41FF6 /* UserPlantCell.swift */; };
 		D624F7BC22CE6F8400B41FF6 /* UserPlantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D624F7BA22CE6F8400B41FF6 /* UserPlantCell.xib */; };
@@ -87,6 +90,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D607BF2C22DF559500B6177D /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		D607BF2F22DF60B100B6177D /* MockDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabase.swift; sourceTree = "<group>"; };
+		D607BF3222DF6B9900B6177D /* Kit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kit.swift; sourceTree = "<group>"; };
 		D624F7B622CE6B2A00B41FF6 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		D624F7B922CE6F8400B41FF6 /* UserPlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlantCell.swift; sourceTree = "<group>"; };
 		D624F7BA22CE6F8400B41FF6 /* UserPlantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPlantCell.xib; sourceTree = "<group>"; };
@@ -163,10 +169,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D607BF2E22DF60A400B6177D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D607BF2F22DF60B100B6177D /* MockDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		D624F7B522CE6B1F00B41FF6 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
 				D624F7B622CE6B2A00B41FF6 /* Mock.swift */,
+				D607BF2C22DF559500B6177D /* DateFormatter.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -256,6 +271,7 @@
 				D64C629322DC8713006AED93 /* FlowCoordinatorType.swift */,
 				D64C628C22DC859A006AED93 /* FlowCoordinator.swift */,
 				D64C629522DC87CB006AED93 /* TabCoordinatorType.swift */,
+				D607BF3222DF6B9900B6177D /* Kit.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -333,6 +349,7 @@
 		D66BB68B22CE47AF006B4427 /* Planty */ = {
 			isa = PBXGroup;
 			children = (
+				D607BF2E22DF60A400B6177D /* Database */,
 				D624F7E622CF5FF100B41FF6 /* Network */,
 				D624F7E122CF5E5300B41FF6 /* General */,
 				D624F7DE22CE917200B41FF6 /* Extension */,
@@ -517,6 +534,7 @@
 				D66BB6A422CE47EC006B4427 /* Plant.swift in Sources */,
 				D624F7F822CF660400B41FF6 /* LoadingViewController.swift in Sources */,
 				D624F7FA22CF665500B41FF6 /* Extension+UIViewController.swift in Sources */,
+				D607BF3322DF6B9900B6177D /* Kit.swift in Sources */,
 				D6FE3C1F22DA1377003A7714 /* R.generated.swift in Sources */,
 				D64C62A322DC9DAE006AED93 /* ScannerViewController.swift in Sources */,
 				D64C629122DC8660006AED93 /* App.swift in Sources */,
@@ -532,6 +550,8 @@
 				D624F7F022CF62EE00B41FF6 /* CommunityDataController.swift in Sources */,
 				D624F7EA22CF60CC00B41FF6 /* CommunityViewController.swift in Sources */,
 				D64C628B22DC8390006AED93 /* PlantDetailVCDataSource.swift in Sources */,
+				D607BF2D22DF559500B6177D /* DateFormatter.swift in Sources */,
+				D607BF3022DF60B100B6177D /* MockDatabase.swift in Sources */,
 				D624F7C522CE738B00B41FF6 /* UserPlantDataController.swift in Sources */,
 				D64C629822DC88E4006AED93 /* TabBarController.swift in Sources */,
 				D64C628022DC7D1B006AED93 /* PlantDetailViewController.swift in Sources */,
