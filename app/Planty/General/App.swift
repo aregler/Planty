@@ -37,11 +37,13 @@ extension App {
 					flowCoordinator: FlowCoordinatorType? = App.current.flowCoordinator,
 					isVoiceOverRunning: Bool = App.current.isVoiceOverRunning,
 					isTest: Bool = App.current.isTest,
+					kit: Kit = App.current.kit,
 					tabCoordinator: TabCoordinatorType? = App.current.tabCoordinator) {
 		push(state: State(db: database,
 						  flowCoordinator: flowCoordinator,
 						  isTest: isTest,
 						  isVoiceOverRunning: isVoiceOverRunning,
+						  kit: kit,
 						  tabCoordinator: tabCoordinator))
 	}
 
@@ -49,11 +51,13 @@ extension App {
 							   flowCoordinator: FlowCoordinatorType? = App.current.flowCoordinator,
 							   isVoiceOverRunning: Bool = App.current.isVoiceOverRunning,
 							   isTest: Bool = App.current.isTest,
+							   kit: Kit = App.current.kit,
 							   tabCoordinator: TabCoordinatorType? = App.current.tabCoordinator) {
 		replaceCurrentState(with: State(db: database,
 										flowCoordinator: flowCoordinator,
 										isTest: isTest,
 										isVoiceOverRunning: isVoiceOverRunning,
+										kit: kit,
 										tabCoordinator: tabCoordinator))
 	}
 }

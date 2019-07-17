@@ -10,14 +10,26 @@ import Charts
 import Foundation
 
 final class MockDatabase {
+	private var plants: [Plant]
 
-	private var plants: [Plant] = [Mock.citrusPlant]
+	init() {
+		let plant = Mock.citrusPlant
+		plants = [plant]
+		checkMoistureLevel(for: plant)
+	}
 
 	func getPlants() -> [Plant] {
 		return plants
 	}
 
+	private func checkMoistureLevel(for plant: Plant) {
+		if plant.moistureLevel < 10.00 {
+			App.current.kit.scheduleMockNotification(for: plant, reason: .water)
+		}
+	}
+
 	func add(plant: Plant) {
+		checkMoistureLevel(for: plant)
 		plants.append(plant)
 	}
 

@@ -27,7 +27,7 @@ class AddProductViewController: UIViewController {
 
 		if id == 42 {
 			App.current.database.add(plant: Mock.strawberry)
-			Kit().scheduleMockNotification(for: Mock.strawberry)
+			App.current.kit.scheduleMockNotification(for: Mock.strawberry, reason: .fertilise)
 		}
 
 		navigationController?.popViewController(animated: true)

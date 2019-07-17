@@ -14,6 +14,7 @@ struct State {
 	let isTest: Bool
 	let isUITest: Bool
 	let isVoiceOverRunning: Bool
+	let kit: Kit
 	let shouldAnimate: () -> Bool
 	let tabCoordinator: TabCoordinatorType?
 
@@ -22,6 +23,7 @@ struct State {
 		flowCoordinator: FlowCoordinatorType? = nil,
 		isTest: Bool = NSClassFromString("XCTestCase") != nil,
 		isVoiceOverRunning: Bool = UIAccessibility.isVoiceOverRunning,
+		kit: Kit = Kit(),
 		shouldAnimate: @escaping () -> Bool = { !(App.current.isVoiceOverRunning || UIAccessibility.isReduceMotionEnabled) },
 		tabCoordinator: TabCoordinatorType? = nil) {
 
@@ -31,6 +33,7 @@ struct State {
 		self.isUITest = isUITest
 		self.isTest = isTest
 		self.isVoiceOverRunning = isVoiceOverRunning
+		self.kit = kit
 		self.shouldAnimate = shouldAnimate
 		self.tabCoordinator = tabCoordinator
 	}

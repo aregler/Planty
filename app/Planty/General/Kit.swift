@@ -11,7 +11,12 @@ import UserNotifications
 
 final class Kit {
 
-	func scheduleMockNotification(for plant: Plant) {
+	enum NotificationReason: String {
+		case fertilise = "düngen"
+		case water = "giessen"
+	}
+
+	func scheduleMockNotification(for plant: Plant, reason: NotificationReason) {
 		let notificationCenter = UNUserNotificationCenter.current()
 
 		let options: UNAuthorizationOptions = [.alert, .sound, .badge]
@@ -24,7 +29,7 @@ final class Kit {
 
 		let content = UNMutableNotificationContent()
 		content.title = "⚠️ Achtung! ⚠️"
-		content.body = "\n Bitte düngen Sie Ihre \(plant.kind.string)"
+		content.body = "\n Bitte \(reason.rawValue) Sie Ihre \(plant.kind.string)"
 
 		let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
 		let uuidString = UUID().uuidString
